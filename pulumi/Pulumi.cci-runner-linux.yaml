@@ -1,0 +1,4 @@
+config:
+  scaleway:project_id: 293f18c9-ee3d-49d7-aba5-7749d6bfdfcd
+  scaleway:region: fr-par
+  scaleway:zone: fr-par-2

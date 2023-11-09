@@ -6,7 +6,6 @@
 # This script relies on 4_package.py having been run to generate the packaged model
 
 # Import dependencies
-from dotenv import load_dotenv
 import paramiko
 import os
 import sys
@@ -14,8 +13,6 @@ import sys
 # Get the path to this script
 script_dir = sys.path[0]
 
-# Load environment variables from .env file
-load_dotenv()
 
 # Read the version number from a file
 with open(os.path.join(script_dir, 'model_version.txt')) as f:

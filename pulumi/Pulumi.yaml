@@ -1,0 +1,6 @@
+name: cci-ml-runner
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: CircleCI AI/ML workload runner demo

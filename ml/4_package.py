@@ -10,15 +10,10 @@ import tempfile
 import sys
 import tensorflow as tf
 import os
-from dotenv import load_dotenv
 import pysftp
 
 # Get the path to this script
 script_dir = sys.path[0]
-
-# Load environment variables from .env file
-# This file should contain your secrets like passwords and auth keys and should be loaded from CircleCi environment variables - not stored in your repo
-load_dotenv()
 
 # Create a temporary directory
 temp_dir = tempfile.TemporaryDirectory()

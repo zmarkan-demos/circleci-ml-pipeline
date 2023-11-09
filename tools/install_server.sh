@@ -18,7 +18,7 @@ sudo chmod -R 775 /var/models
 
 # Create a TensorFlow Serving container with the directories configured for use with this example
 # Ensure any previous container is removed first to avoid conflicts and startup errors
-docker run -d -rm --name tensorflow_serving -p 8501:8501 -v /var/models/prod:/models/my_model -e MODEL_NAME=my_model tensorflow/serving
+docker run -d --rm --name tensorflow_serving -p 8501:8501 -v /var/models/prod:/models/my_model -e MODEL_NAME=my_model tensorflow/serving
 
 # Until you publish your model to TensorFlow Serving, you will receive this message: Did you forget to name your leaf directory as a number (eg. '/1/')?
 # If you see this message in the Docker output, it means that the container is running successfully
